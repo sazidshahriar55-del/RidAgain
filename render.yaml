@@ -1,14 +1,12 @@
 services:
-
-* type: web
-  name: ridagain
-  runtime: node
-  plan: free
-  buildCommand: npm install
-  startCommand: npm start
-  envVars:
-
-  * key: NODE_ENV
-    value: production
-  * key: DATA_DIR
-    value: ./data
+  - type: web
+    name: ridagain
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATA_DIR
+        value: ./data
