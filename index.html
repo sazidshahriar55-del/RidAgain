@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f7f5ef">
+  <meta name="description" content="RidAgain — নতুন ও পুরাতন বই কেনাবেচার সহজ ঠিকানা।">
+  <title>RidAgain — বই আবার ঘুরে আসুক</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="#"><span class="brand-mark">R</span><span>RidAgain<span class="dot">.</span></span></a>
+  <nav><a href="#browse">বই খুঁজুন</a><a href="#how">কীভাবে কাজ করে</a></nav>
+  <div class="header-actions"><button class="text-btn" id="loginBtn">লগ ইন</button><button class="sell-btn" id="sellBtn">＋ বই বিক্রি করুন</button><button class="menu-btn" id="menuBtn">☰</button></div>
+</header>
+<main>
+<section class="hero">
+  <div class="hero-copy"><span class="eyebrow"><i></i> বাংলাদেশের বইপ্রেমীদের মার্কেটপ্লেস</span>
+    <h1>একটি বইয়ের গল্প<br> <em>এখানেই শেষ নয়।</em></h1>
+    <p>আপনার পড়া শেষ? অন্য কারও নতুন শুরু হোক। নতুন কিংবা পুরাতন বই কিনুন, বিক্রি করুন—সহজেই।</p>
+    <div class="hero-buttons"><a class="primary-btn" href="#browse">বই খুঁজে দেখুন <span>↗</span></a><button class="outline-btn" id="heroSell">বই বিক্রি করুন</button></div>
+    <div class="trust-row"><div class="avatar-stack"><b>ব</b><b>প</b><b>R</b><b>+</b></div><span><strong>বইয়ের নতুন ঠিকানা</strong><br>পড়ুন · শেয়ার করুন · আবার পড়ুন</span></div>
+  </div>
+  <div class="hero-art"><div class="sun"></div><div class="floating-note note-top">এক বই, অনেক গল্প <span>✦</span></div>
+    <div class="book-stack"><div class="book book-one"><small>THE ART OF</small><strong>READING</strong><span>Every page matters.</span></div><div class="book book-two"><small>পথের পাঁচালী</small><strong>বিভূতিভূষণ</strong></div><div class="book book-three"><small>MAKE IT</small><strong>HAPPEN.</strong></div></div>
+    <div class="floating-note note-bottom"><span>↗</span> বইয়ের জীবন বাড়িয়ে দিন</div>
+  </div>
+</section>
+<section class="stats"><div><strong>নতুন ও পুরাতন</strong><span>সব ধরনের বই</span></div><div><strong>সারা বাংলাদেশ</strong><span>নিজের শহরেই খুঁজুন</span></div><div><strong>সহজ কেনাবেচা</strong><span>সরাসরি ক্রেতা-বিক্রেতা</span></div></section>
+<section class="browse section" id="browse">
+  <div class="section-heading"><div><span class="eyebrow">THE BOOKSHELF</span><h2>আপনার পরের <em>পড়াটা</em> খুঁজুন</h2><p>পছন্দের বইটি হয়তো কারও বুকশেলফেই অপেক্ষা করছে।</p></div><span class="result-count" id="resultCount">বই লোড হচ্ছে...</span></div>
+  <div class="search-panel"><div class="searchbox"><span>⌕</span><input id="searchInput" placeholder="বইয়ের নাম, লেখক বা কীওয়ার্ড লিখুন..."><kbd>ENTER</kbd></div><select id="categoryFilter"><option value="">সব ক্যাটাগরি</option><option>বাংলা সাহিত্য</option><option>Fiction</option><option>Self Development</option><option>History</option><option>Productivity</option><option>Academic</option><option>Science</option></select><select id="conditionFilter"><option value="">সব Condition</option><option>Like New</option><option>Very Good</option><option>Good</option><option>Acceptable</option></select></div>
+  <div class="chips"><button class="chip active" data-cat="">সব বই</button><button class="chip" data-cat="বাংলা সাহিত্য">বাংলা সাহিত্য</button><button class="chip" data-cat="Fiction">Fiction</button><button class="chip" data-cat="Academic">Academic</button><button class="chip" data-cat="Self Development">Self Development</button></div>
+  <div class="book-grid" id="bookGrid"><div class="loading">বই আনা হচ্ছে...</div></div>
+</section>
+<section class="sell-banner"><div><span class="eyebrow">GIVE YOUR BOOK A SECOND LIFE</span><h2>বুকশেলফে জায়গা নেই?<br><em>বইটিকে নতুন পাঠক দিন।</em></h2><p>আপনার পড়া শেষ হওয়া বইটি বিক্রি করুন। অন্য কেউ পেয়ে যাবে তার পরের প্রিয় বই।</p><button class="primary-btn" id="bannerSell">এখনই বই বিক্রি করুন <span>↗</span></button></div><div class="banner-illustration"><div class="plant">✳</div><div class="shelf"><i></i><i></i><i></i><i></i><i></i></div><span class="banner-sticker">READ<br>AGAIN!</span></div></section>
+<section class="how section" id="how"><div class="section-heading"><div><span class="eyebrow">SIMPLE AS THAT</span><h2>শুরু করা <em>সহজ।</em></h2></div></div><div class="steps"><article><b>01</b><span class="step-icon">⌕</span><h3>বই খুঁজুন</h3><p>নাম, লেখক বা ক্যাটাগরি দিয়ে আপনার পছন্দের বই খুঁজে নিন।</p></article><article><b>02</b><span class="step-icon">＋</span><h3>বই লিস্ট করুন</h3><p>বইয়ের তথ্য, অবস্থা ও দাম দিয়ে সহজেই বিক্রির পোস্ট দিন।</p></article><article><b>03</b><span class="step-icon">↗</span><h3>যোগাযোগ করুন</h3><p>অর্ডার রিকোয়েস্ট পাঠিয়ে বিক্রেতার সঙ্গে ডেলিভারি ঠিক করুন।</p></article></div></section>
+</main>
+<footer><a class="brand" href="#"><span class="brand-mark">R</span><span>RidAgain<span class="dot">.</span></span></a><span>একটি বইয়ের গল্প চলতেই থাকুক।</span><small>© 2026 RidAgain. Made for readers in Bangladesh.</small></footer>
+<div class="modal-backdrop" id="modalBackdrop"><section class="modal" role="dialog" aria-modal="true"><button class="close" id="closeModal">×</button><div id="modalContent"></div></section></div>
+<div class="toast" id="toast"></div>
+<script src="/app.js"></script>
+</body></html>
